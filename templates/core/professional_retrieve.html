@@ -1,0 +1,170 @@
+{% extends 'base/base.html' %}
+<!--  -->
+{% load static %}
+<!--  -->
+{% block extra_header %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+{% endblock extra_header%}
+<!-- begin  -->
+{% block navbar %}
+<!-- include  -->
+{% include 'base/clean_navbar.html' %}
+<!-- finish  -->
+{% endblock navbar %}
+
+<!--  -->
+{% block content %}
+<!-- begin #quote -->
+<div id="quote" class="content bg-black-darker has-bg" data-scrollview="true">
+  <!-- begin content-bg -->
+  <div
+    class="content-bg"
+    style="background-image: url(/static/assets/decires_img/portada_png.png); opacity: 0.4"
+    data-paroller-factor="0.5"
+    data-paroller-factor-md="0.01"
+    data-paroller-factor-xs="0.01"
+  ></div>
+  <!-- end content-bg -->
+  <!-- begin container -->
+  <div class="container" data-animation="true" data-animation-type="fadeInLeft">
+    <!-- begin row -->
+    <div class="row">
+      <!-- begin col-12 -->
+      <div class="col-md-12 quote">
+        </br>
+        <span class="text-primary">Perfil Profesional</span>
+        <!-- <small>Lic. A B, Decires Psicología.</small> -->
+        </br>
+      </div>
+      <!-- end col-12 -->
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</div>
+<!-- end #quote -->
+
+<br>
+<br>
+<br>
+<!-- begin container -->
+<div class="container">
+  <!-- begin row -->
+  <div class="row row-space-30">
+    <!-- begin col-10 -->
+    <div class="col-lg-10">
+      <!-- begin section-container -->
+      <div class="section-container" id="profile">
+      </div>
+      <div class="section-container" id="mapas">
+
+        <div class="section-container">
+            <h2 class="content-title"><small><i class="fas fa-map-marker fa-lg"></i></small> Oficina(s) de atención</h2>
+            <hr>
+            <ul class="sidebar-list" id="office_locations"></ul>
+        </div>
+        <br>
+        <div style="height: 350px; weight:350px;" id="map"></div>
+        <br>
+        <br>
+      </div>
+      <!-- end section-container -->
+    </div>
+    <!-- end col-10 -->
+    <!-- begin col-2 -->
+    <div class="col-lg-2">
+        <div class="section-container">
+            <h2 class="content-title"><small><i class="fas fa-book fa-lg"></i></small> Especializaciones</h2>
+            <hr>
+            <ul class="sidebar-list" id="specializations"></ul>
+        </div>
+        <div class="section-container">
+            <h2 class="content-title"><small><i class="fas fa-language fa-lg"></i></small> Idiomas</h2>
+            <hr>
+            <ul class="sidebar-list" id="languages"></ul>
+        </div>
+        <br><br>
+        <div class="section-container">
+            <a class="btn btn-lg btn-link btn-info"  onclick="loadModal()" > Contactame &nbsp; <i class="fa fa-envelope"></i></a>
+        </div>
+    </div>
+    <!-- end col-2 -->
+  </div>
+  <!-- end row -->
+</div>
+<!-- end container -->
+
+
+<div class="modal" id="modal_send_message">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-inverse">
+        <h4 class="modal-title text-yellow">Formulario de contacto</h4>
+        <button type="button" class="close text-yellow" data-dismiss="modal" aria-hidden="true">
+          ×
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal form-bordered">
+          <!--  -->
+          <div class="form-group row">
+            <label class="col-lg-4 col-form-label">NOMBRE</label>
+            <div class="col-lg-8">
+              <input type="text" placeholder="Nombre completo" id="full_name" class="form-control form-control-sm">
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="form-group row">
+            <label class="col-lg-4 col-form-label">EMAIL</label>
+            <div class="col-lg-8">
+              <input type="text" placeholder="xxxx@xxx.com" id="email" class="form-control form-control-sm">
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="form-group row">
+            <label class="col-lg-4 col-form-label">TELÉFONO</label>
+            <div class="col-lg-8">
+              <input type="text" placeholder="Ej: +54 (000) 000.00.00" id="phone" class="form-control form-control-sm" id="masked-input-phone">
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="form-group row">
+            <label class="col-lg-4 col-form-label">MENSAJE (máx 150)</label>
+            <div class="col-lg-8">
+              <textarea class="form-control form-control-sm" rows="5" id="message"></textarea>
+            </div>
+          </div>
+          <!--  -->
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="javascript:;" class="btn btn-secondary" data-dismiss="modal">Cerrar</a>
+        <a href="javascript:;" onclick="sendMessage();" class="btn btn-primary">Enviar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+<!--  -->
+{% block extra_js %}
+<script>
+  const originalId = {{original_id}}
+</script>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""
+></script>
+<script src="{% static 'base/professional_retrieve.js' %}?no_cache={{ no_cache }}"></script>
+<script src="{% static 'assets/plugins/jquery.maskedinput/src/jquery.maskedinput.js' %}"></script>
+
+
+
+{% endblock extra_js %}

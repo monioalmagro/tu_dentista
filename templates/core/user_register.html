@@ -1,0 +1,263 @@
+{% extends 'base/base.html' %}
+<!--  -->
+{% load static %}
+<!--  -->
+{% block extra_header %}
+<link href="{% static 'assets/plugins/select2/dist/css/select2.min.css' %}" rel="stylesheet" />
+{% endblock extra_header %}
+
+{% block navbar %} {% include 'base/clean_navbar.html' %} {% endblock navbar %}
+
+<!--  -->
+{% block content %}
+<!-- begin #quote -->
+<div id="quote" class="content bg-black-darker has-bg" data-scrollview="true">
+  <!-- begin content-bg -->
+  <div
+    class="content-bg"
+    style="background-image: url(/static/assets/decires_img/portada_png.png); opacity: 0.4"
+    data-paroller-factor="0.5"
+    data-paroller-factor-md="0.01"
+    data-paroller-factor-xs="0.01"
+  ></div>
+  <!-- end content-bg -->
+  <!-- begin container -->
+  <div class="container" data-animation="true" data-animation-type="fadeInLeft">
+    <!-- begin row -->
+    <div class="row">
+      <!-- begin col-12 -->
+      <div class="col-md-12 quote">
+        </br>
+        <span class="text-primary">Registro de profesionales, Unete al equipo ahora</span>!
+        <!-- <small>Lic. A B, Decires Psicología.</small> -->
+        </br>
+      </div>
+      <!-- end col-12 -->
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</div>
+<!-- end #quote -->
+
+<!-- begin #team -->
+<div id="team" class="content" data-scrollview="true">
+  <!-- begin container -->
+  <div class="container">
+    <h2 class="content-title">Formulario de registro</h2>
+
+    <!-- begin row -->
+    <div class="row">
+      <!-- begin col-4 -->
+      <div class="col-md-12 col-sm-12">
+        <!-- begin team -->
+        <div class="team">
+          <div class="image" data-animation="true" data-animation-type="flipInX">
+            {% comment %} <img src="/static/assets/img/user/user-1.jpg" alt="Ryan Teller" /> {% endcomment %}
+            <div id="image-container"></div>
+          </div>
+
+          <div class="info">
+            <!-- begin register-content -->
+            <div class="register-content col-md-8 offset-md-2">
+              <form method="POST" class="margin-bottom-0">
+
+                <!-- principal init -->
+                <div class="row row-space-10">
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">Nombre(s) <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="first_name" placeholder="Nombres" required />
+                  </div>
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">Apellido(s) <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="last_name" placeholder="Apellidos" required />
+                  </div>
+                </div>
+                <div class="row row-space-10">
+
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">Género<span class="text-danger">*</span></label>
+                    <select class="default-select2 form-control" id="gender" required>
+                      <option value="">Género</option>
+                      <option value="MASCULINO">Masculino</option>
+                      <option value="FEMENINO">Femenino</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">Avatar del usuario <span class="text-danger">*</span></label>
+                    <input type="file" id="avatar" accept="image/*" />
+                  </div>
+                </div>
+                <div class="row row-space-10">
+
+                  <div class="col-md-12 m-b-15">
+                    <label class="control-label">Previsualizar Avatar<span class="text-dark">*</span></label>
+                    <button type="button" class="btn btn-warning form-control text-dark" onclick="uploadImage()">Previsualizar</button>
+                  </div>
+                </div>
+
+
+                <!-- Información de contacto -->
+                <div class="row row-space-10">
+                  <div class="col-md-12 m-b-15">
+                    <h5 class="content-title">Información de contacto</h5>
+                  </div>
+                </div>
+                <div class="row row-space-10">
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">Número de Télefono <span class="text-danger">*</span></label>
+                    <input type="text" id="phone" class="form-control" placeholder="Número de Télefono" required />
+                  </div>
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">Email <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="email" placeholder="Email address" required />
+                  </div>
+                </div>
+                <div class="row row-space-10">
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">Horario de Atención</label>
+                    <input type="text" id="attention_schedule" class="form-control" placeholder="Ej: 8:00am - 4:00pm" />
+                  </div>
+                </div>
+
+                <!-- Información de contacto end -->
+
+                <!-- Información profesional -->
+                <div class="row row-space-10">
+                  <div class="col-md-12 m-b-15">
+                    <h5 class="content-title">Información profesional</h5>
+                  </div>
+                </div>
+                <div class="row row-space-10">
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">Carrera<span class="text-danger">*</span></label>
+                    <select class="default-select2 form-control" id="carreer" required>
+                      <option value="">Carrera</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">Especializaciones<span class="text-danger">*</span></label>
+                    <select class="multiple-select2 form-control" id="specializations" multiple="multiple" required>
+                      <option value="">Especializaciones</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row row-space-10">
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">Método de atención<span class="text-danger">*</span></label>
+                    <select class="default-select2 form-control" id="service_method">
+                      <option value=""></option>
+                      <option value="PRESENCIAL">Presencial</option>
+                      <option value="VIRTUAL">Virtual</option>
+                      <option value="PRESENCIAL_VIRTUAL">Presencial/Virtual</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">Modalidad de atención<span class="text-danger">*</span></label>
+                    <select class="default-select2 form-control" id="service_modality">
+                      <option value=""></option>
+                      <option value="INDIVIDUAL">Individual</option>
+                      <option value="GRUPAL">Grupal</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row row-space-10">
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">Idiomas de atención<span class="text-danger">*</span></label>
+                    <select class="multiple-select2 form-control" multiple="multiple" id="languages">
+                      <option value=""></option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row row-space-10">
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">Número de Matricula <span class="text-danger">*</span></label>
+                    <input type="text" id="nro_matricula" class="form-control" placeholder="Número de matrícula" />
+                  </div>
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">Matricula (Archivo)<span class="text-danger">*</span></label>
+                    <input type="file" id="matricula" />
+                  </div>
+
+                </div>
+                <div class="row row-space-10">
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">Número de DNI <span class="text-danger">*</span></label>
+                    <input type="text" id="nro_dni" class="form-control" placeholder="Número de DNI" required />
+                  </div>
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">DNI (Archivo)<span class="text-danger">*</span></label>
+                    <input type="file" id="dni" />
+                  </div>
+                </div>
+                <div class="row row-space-10">
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">Número de CUIT<span class="text-danger">*</span></label>
+                    <input type="text" id="cuit" class="form-control" placeholder="CUIT" />
+                  </div>
+                </div>
+                <div class="row row-space-10">
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">Ciudad de atención (Solo Presencial)</label>
+                    <select class="default-select2 form-control" id="city" required>
+                      <option value="">Ciudad de atención</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 m-b-15">
+                    <label class="control-label">Localidades de atención (Solo Presencial)</label>
+                    <select class="multiple-select2 form-control" id="zone" multiple="multiple" required>
+                      <option value="">Localidades de atención</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row row-space-10">
+                  <div class="col-md-12 m-b-15">
+                    <label class="control-label">Ppal dirección de atención.</label>
+                    <input type="text" class="form-control" id="personal_address" placeholder="Ppal dirección de atención">
+                  </div>
+                </div>
+                <div class="row row-space-10">
+                  <div class="col-md-12 m-b-15">
+                    <label class="control-label">Resumen de su experiencia profesional (500 máx). <span class="text-danger">*</span></label>
+                    <textarea class="form-control" rows="3" id="experience_summary" maxlength="500" placeholder="Experiencia profesional"></textarea>
+                  </div>
+                </div>
+
+                <div class="row row-space-10">
+                  <div class="col-md-12 m-b-15">
+                    <h5 class="content-title">Membresías</h5>
+                  </div>
+                </div>
+                <div class="row row-space-10">
+                  <div class="col-md-12 m-b-15">
+                    <ul class="pricing-table pricing-col-4" id="features">
+
+                    </ul>
+                  </div>
+                </div>
+                <!-- Información profesional end -->
+                <div class="register-buttons">
+                  <input type="hidden" id="membership_plan" value=""/>
+                  <button type="button" onclick="uploadAttachment()" class="btn btn-warning btn-block btn-lg text-dark">Registrar</button>
+                </div>
+              </form>
+            </div>
+            <!-- end register-content -->
+          </div>
+        </div>
+        <!-- end team -->
+      </div>
+      <!-- end col-4 -->
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</div>
+<!-- end #team -->
+
+{% endblock content %}
+<!--  -->
+{% block extra_js %}
+<script src="{% static 'assets/plugins/select2/dist/js/select2.min.js' %}?no_cache={{ no_cache }}"></script>
+<script src="{% static 'base/user_register.js' %}?no_cache={{ no_cache }}"></script>
+{% endblock extra_js %}

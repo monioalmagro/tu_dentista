@@ -1,0 +1,469 @@
+<!-- begin #home -->
+<div id="home" class="content has-bg home">
+  <!-- begin content-bg -->
+  <div
+    class="content-bg"
+    style="background-image: url(/static/assets/decires_img/portada_png.png)"
+    data-paroller="true"
+    data-paroller-factor="0.5"
+    data-paroller-factor-xs="0.25"
+  ></div>
+  <!-- end content-bg -->
+  <!-- begin container -->
+  <div class="container home-content">
+    <h2 class="text-white m-t-10" style="font-size: 3.3em; font-weight: bold">
+      <strong>{{ title }}</strong>
+    </h2>
+
+    {% comment %} {% endcomment %}
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+          <form class="form-inline">
+            <div class="form-group m-r-10">
+              <select class="default-select2 form-control" id="profesionales">
+                <option value="" selected>Profesionales</option>
+              </select>
+            </div>
+            <!--  -->
+            <div class="form-group m-r-10">
+              <select class="default-select2 form-control" id="select_modalidad">
+                <option value="" selected>Modalidad</option>
+                <option value="PRESENCIAL">Presencial</option>
+                <option value="VIRTUAL">Virtual</option>
+              </select>
+            </div>
+            <!--  -->
+            <div class="form-group m-r-10" id="ciudad">
+              <select class="default-select2 form-control" id="select_ciudad">
+                <option value="" selected>Ciudad</option>
+              </select>
+            </div>
+            <!--  -->
+            <div class="form-group m-r-10" id="zona">
+              <select class="default-select2 form-control" id="select_zona">
+                <option value="" selected>Zonas</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+          <a href="javascript:;" onclick="searchProffessional();" class="btn btn-theme btn-warning"
+            ><i class="fa fa-search"></i> &nbsp;Buscar
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end container -->
+</div>
+<!-- end #home -->
+
+<!-- begin #about -->
+<div id="about" class="content text-center" data-scrollview="true">
+  <!-- begin container -->
+  <div class="container" data-animation="true" data-animation-type="fadeInDown">
+    <h2 class="content-title">¿Cómo funciona la redpsidecires?</h2>
+    <!-- begin row -->
+    <div class="row justify-content-center">
+      <!-- begin col-4 -->
+      <div class="col-md-8 col-sm-12">
+        <!-- begin about -->
+        <div class="about">
+          <p class="text-justify">
+            La redpsidecires constituye una red de asistencia compuesta por psicólogos/as,
+            psiquiatras y psicopedagogos, entre otras disciplinas. Nuestro objetivo es que
+            encuentres fácilmente al profesional que sea ideal para ti. Todos los profesionales que
+            se encuentran en la redpsidecires tienen sus títulos habilitantes y están matriculados
+            por el Ministerio de Salud de la Nación. Puedes elegir el tipo de atención que prefieras
+            (ofrecemos atención a distancia -online, virtual- o presencial). También puedes elegir
+            el tipo de disciplina y la ubicación del profesional. Si se requiere tratamiento con
+            profesionales de distintas disciplinas que trabajan de manera presencial, se puede
+            elegir por zonas, barrios, provincias a lo largo y ancho de nuestro país. Los
+            consultantes/pacientes que no puedan asistir de manera presencial y elijan tratamientos
+            de manera virtual (a distancia, en línea), son tratamientos que funcionan muy bien,
+            pudiendo acceder desde donde te encuentres (casa, oficina) de manera cómoda y es una
+            forma que antes muchos/as que tenían la necesidad de ser escuchados, no podían acceder.
+            Tanto la atención de manera presencial como a distancia, se garantiza el anonimato del
+            consultante. Puedes acceder desde tu celular, computadora o tablet. Es muy sencillo,
+            haces clic en profesional, principal o virtual y buscas. Allí aparecerán los
+            profesionales que más te convengan, según la disciplina, aranceles, horarios y turnos
+            inmediatos.
+          </p>
+        </div>
+        <!-- end about -->
+      </div>
+      <!-- end col-4 -->
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</div>
+
+<div id="about" class="content text-center" data-scrollview="true">
+  <!-- begin container -->
+  <div class="container" data-animation="true" data-animation-type="fadeInDown">
+    <h2 class="content-title">Profesionales:</h2>
+    <h3 class="content-title">¿Por qué te incluirías en la redpsidecires?</h3>
+    <!-- begin row -->
+    <div class="row justify-content-center">
+      <!-- begin col-4 -->
+      <div class="col-md-8 col-sm-12">
+        <!-- begin about -->
+        <div class="about">
+          <p class="text-justify">
+            Siendo parte de nuestra red, tendrás visibilidad para que los consultantes/pacientes
+            puedan hacer su búsqueda fácil y te encuentren. No se cobran las derivaciones. Solo se
+            cobra una membresía (cuota). Cuota solo plataforma digital O Cuota por formación,
+            supervisión, plataforma digital La redpsidecires hace que el paciente te encuentre como
+            profesional, pero no intermedia en el contacto entre el consultante y el profesional. El
+            contacto lo realiza directamente el solicitante al profesional. Los datos personales y
+            profesionales (DNI, títulos, matrícula, CUIT) no quedan visualizados. ¿Cómo funciona? Te
+            registras, cargas tus datos profesionales eliges el tipo de membresía que prefieres y
+            solicitas nuestra autorización. El resto lo hacemos nosotros.
+          </p>
+        </div>
+        <!-- end about -->
+      </div>
+      <!-- end col-4 -->
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</div>
+
+<div id="about" class="content text-center" data-scrollview="true">
+  <!-- begin container -->
+  <div class="container" data-animation="true" data-animation-type="fadeInDown">
+    <h2 class="content-title">Nuestra Historia</h2>
+    <!-- begin row -->
+    <div class="row justify-content-center">
+      <!-- begin col-4 -->
+      <div class="col-md-8 col-sm-12">
+        <!-- begin about -->
+        <div class="about">
+          <p class="text-justify">
+            Decires comenzó hace más de 10 años como un Centro de Formación en psicoanálisis,
+            capacitando de manera continua, con excelencia y personalización en distintos niveles.
+            Actualmente estamos en expansión, incluyendo una plataforma digital para ampliar nuestra
+            red a profesionales psi de distintas disciplinas, fortaleciendo nuestros equipos y
+            atendiendo la demanda actual de la sociedad. No somos simplemente una red más; somos un
+            equipo de profesionales psi que no perdemos de vista el objetivo de nuestra ética
+            profesional. Contamos con más de 25 años de trayectoria, siempre dedicados a la salud y
+            la atención de pacientes.
+          </p>
+          <p class="text-justify">
+            ¿Queres iniciar una terapia? ¿Necesitas ser escuchado por un profesional? Encuentra en
+            nuestra red psidecires profesionales psi de diferentes disciplinas: niños, adolescentes,
+            adultos, parejas, especializaciones, psiquiatras, psicopedagogos, neuropsicólogos y
+            muchos más. Pueden trabajar de manera virtual o presencial.
+          </p>
+        </div>
+        <!-- end about -->
+      </div>
+      <!-- end col-4 -->
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</div>
+<!-- end #about -->
+
+<!-- begin #team -->
+<div id="team" class="content" data-scrollview="true">
+  <!-- begin container -->
+  <div class="container">
+    <h2 class="content-title">Consultorios</h2>
+    <div class="row justify-content-center">
+      <!-- begin col-4 -->
+      <div class="col-md-8 col-sm-12">
+        <p class="text-justify">
+          "En nuestro espacio, proporcionamos ambientes especialmente diseñados para satisfacer las
+          necesidades de profesionales en búsqueda de consultorios listos para su uso. Ofrecemos
+          áreas amplias y versátiles, equipadas con tecnología de vanguardia y mobiliario
+          ergonómico, asegurando un entorno óptimo para la atención de sus pacientes. Nuestras
+          instalaciones promueven la comodidad, la privacidad y la funcionalidad, brindando un
+          ambiente propicio para el desarrollo de su práctica profesional. Contáctenos para conocer
+          más sobre nuestras opciones de alquiler adaptadas a sus requerimientos. Email:
+          decires.psicologia@gmail.com, Telefono: 11 4069-8762"
+        </p>
+      </div>
+    </div>
+    <!-- begin row -->
+    <div class="row">
+      <!-- begin col-4 -->
+      <div class="col-md-4 col-sm-12">
+        <!-- begin team -->
+        <div class="team">
+          <div data-animation="true" data-animation-type="flipInX" class="image-fluid">
+            <img
+              src="/static/assets/img/user/user-1.jpg"
+              style="max-width: 100%; height: auto"
+              alt="consultorio#1"
+            />
+          </div>
+          <div class="info">
+            <h3 class="name"></h3>
+            <div class="title text-primary"></div>
+            <p></p>
+          </div>
+        </div>
+        <!-- end team -->
+      </div>
+      <!-- end col-4 -->
+      <!-- begin col-4 -->
+      <div class="col-md-4 col-sm-12">
+        <!-- begin team -->
+        <div class="team">
+          <div data-animation="true" data-animation-type="flipInX" class="image-fluid">
+            <img
+              src="/static/assets/img/user/user-2.jpg"
+              style="height: auto; max-width: 100%"
+              alt="Consultorio#2"
+            />
+          </div>
+          <div class="info">
+            <h3 class="name"></h3>
+            <div class="title text-primary"></div>
+            <p></p>
+          </div>
+        </div>
+        <!-- end team -->
+      </div>
+      <!-- end col-4 -->
+      <!-- begin col-4 -->
+      <div class="col-md-4 col-sm-12">
+        <!-- begin team -->
+        <div class="team">
+          <div data-animation="true" data-animation-type="flipInX" class="image-fluid">
+            <img
+              src="/static/assets/img/user/user-3.jpg"
+              style="max-width: 100%; height: auto"
+              alt="Consultorio#3"
+            />
+          </div>
+          <div class="info">
+            <h3 class="name"></h3>
+            <div class="title text-primary"></div>
+            <p></p>
+          </div>
+        </div>
+        <!-- end team -->
+      </div>
+      <!-- end col-4 -->
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</div>
+<!-- end #team -->
+
+<!-- beign #service -->
+<div id="service" class="content" data-scrollview="true">
+  <!-- begin container -->
+  <div class="container">
+    <h2 class="content-title">Nuestros Servicios</h2>
+    <!-- begin row -->
+    <div class="row">
+      <!-- begin col-4 -->
+      <div class="col-md-4 col-sm-12">
+        <div class="service">
+          <div class="icon" data-animation="true" data-animation-type="bounceIn">
+            <i class="fa fa-graduation-cap"></i>
+          </div>
+          <div class="info">
+            <h4 class="title">Formación en psicoanálisis</h4>
+            <p class="text-justify">
+              Capacitamos de manera permanente a profesionales psi que recien inician con su
+              profesión como aquellos profesionales que deseen continuar con la formación. Contamos
+              con distintos niveles. La formación incluye la supervisión a través de nuestro
+              prestigioso equipo docente de amplia trayectoria. El profesional no está solo, somos
+              un equipo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end col-4 -->
+      <!-- begin col-4 -->
+      <div class="col-md-4 col-sm-12">
+        <div class="service">
+          <div class="icon" data-animation="true" data-animation-type="bounceIn">
+            <i class="fa fa-book"></i>
+          </div>
+          <div class="info">
+            <h4 class="title">Talleres</h4>
+            <p class="text-justify">
+              La institución ofrece una gama de talleres virtuales que abordan de manera integral
+              temas fundamentales en el ámbito de la salud mental. Estos talleres, cuidadosamente
+              diseñados, reflejan el compromiso de la institución con la formación continua y el
+              desarrollo profesional en el campo de la salud mental, proporcionando recursos
+              valiosos para aquellos que buscan mejorar sus habilidades y conocimientos en el
+              ejercicio clínico.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end col-4 -->
+      <!-- begin col-4 -->
+      <div class="col-md-4 col-sm-12">
+        <div class="service">
+          <div class="icon" data-animation="true" data-animation-type="bounceIn">
+            <i class="fa fa-building"></i>
+          </div>
+          <div class="info">
+            <h4 class="title">Consultorios en alquiler</h4>
+            <p class="text-justify">
+              contamos con consultorios debidamente habilitados por el Gobierno de la Ciudad de
+              Buenos Aires y el Ministerio de Salud Pública, Estamos dedicados a ofrecer servicios
+              de salud de excelencia en un entorno seguro y regulado para el beneficio de toda
+              nuestra comunidad. Estamos dedicados a ofrecer servicios de salud de excelencia en un
+              entorno seguro y regulado para el beneficio de toda nuestra comunidad.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end col-4 -->
+    </div>
+    <!-- end row -->
+    <!-- begin row -->
+    <div class="row">
+      <!-- begin col-4 -->
+      <div class="col-md-4 col-sm-12">
+        <div class="service">
+          <div class="icon" data-animation="true" data-animation-type="bounceIn">
+            <i class="fa fa-comment-alt"></i>
+          </div>
+          <div class="info">
+            <h4 class="title">Contacto</h4>
+            <p class="text-justify">
+              Para agilizar la gran demanda que tenemos, el paciente ubicará al profesional que más
+              le resulte de su interés, por cercanía, por virtualidad, tipo de tratamiento, por
+              diferentes disciplinas, variedad de aranceles, entre otras cosas. Convocamos a
+              profesionales de todo el país,así el paciente podrá atenderse de forma presencial por
+              zonas. Es sencillo, contactas al profesional, coordinan horarios y honorarios. Sin
+              lista de espera
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end col-4 -->
+      <!-- begin col-4 -->
+      <div class="col-md-4 col-sm-12">
+        <div class="service">
+          <div class="icon" data-animation="true" data-animation-type="bounceIn">
+            <i class="fa fa-eye"></i>
+          </div>
+          <div class="info">
+            <h4 class="title">Supervisión</h4>
+            <p class="text-justify">
+              Dentro de la formación, contiene la Supervisión grupal, una vez semanal.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end col-4 -->
+      <!-- begin col-4 -->
+      <div class="col-md-4 col-sm-12">
+        <div class="service">
+          <div class="icon" data-animation="true" data-animation-type="bounceIn">
+            <i class="fa fa-university"></i>
+          </div>
+          <div class="info">
+            <h4 class="title">Supervisión individual</h4>
+            <p class="text-justify">
+              Es un servicio destinado a profesionales psicólogos, que necesitan consultar, pensar,
+              acerca de algún obstáculo en la clínica y que requiere de otro profesional con mayor
+              experiencia en formación y clínica para que juntos se pueda interpelar, armar y
+              despejar las dudas a cercados caso por el que se consultó. Comunícate al email:
+              decirespsicologia@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end col-4 -->
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</div>
+<!-- end #about -->
+
+<!-- begin #client -->
+<div id="client" class="content has-bg bg-black-darker" data-scrollview="true">
+  <!-- begin content-bg -->
+  <div
+    class="content-bg"
+    style="background-image: url(/static/assets/decires_img/portada_png.png); opacity: 0.4"
+    data-paroller-factor="0.5"
+    data-paroller-factor-md="0.01"
+    data-paroller-factor-xs="0.01"
+  ></div>
+  <!-- end content-bg -->
+  <!-- begin container -->
+  <div class="container" data-animation="true" data-animation-type="fadeInUp">
+    <h2 class="content-title">Testimonios</h2>
+    <!-- begin carousel -->
+    <div class="carousel testimonials slide" data-ride="carousel" id="testimonials">
+      <!-- begin carousel-inner -->
+      <div class="carousel-inner text-center">
+        <!-- begin item -->
+        <div class="carousel-item active">
+          <blockquote>
+            <i class="fa fa-quote-left"></i>
+            Ya recomendé Decires a varias personas, es un gran espacio para comenzar o retomar
+            terapia. La entrevista de admisión es muy respetuosa, Thelma es una profesional
+            impecable. La derivación es muy rápida y en mi caso me encuentro muy conforme y contenta
+            con la profesional que me asignaron. Los bonos son realmente muy accesibles para los
+            tiempos que corren, uno siempre puede elegir pagar más de acuerdo a sus posibilidades.
+            Sin dudas un gran espacio para alojar el motivo de consulta que cada cual tenga y
+            trabajarlo desde un encuadre ético y profesional.
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+          <div class="name">— <span class="text-primary">Mailen R</span></div>
+        </div>
+        <!-- end item -->
+        <!-- begin item -->
+        <div class="carousel-item">
+          <blockquote>
+            <i class="fa fa-quote-left"></i>
+            Muy buena experiencia. Rápida atención para la admisión y la derivación a una
+            profesional con muy buen trato desde lo humano, que respeta horarios y también los
+            adapta ante eventualidades.
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+          <div class="name">— <span class="text-primary">Ana M</span></div>
+        </div>
+        <!-- end item -->
+        <!-- begin item -->
+        <div class="carousel-item">
+          <blockquote>
+            <i class="fa fa-quote-left"></i>
+            Me empecé a atender hace relativamente poco, pero la atención fue muy buena, me
+            orientaron con una psicóloga que creo fue la adecuada, lo recomiendo si queres empezar a
+            hacer terapia. ❤️
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+          <div class="name">— <span class="text-primary">Candela R</span></div>
+        </div>
+        <!-- end item -->
+      </div>
+      <!-- end carousel-inner -->
+      <!-- begin carousel-indicators -->
+      <ol class="carousel-indicators m-b-0">
+        <li data-target="#testimonials" data-slide-to="0" class="active"></li>
+        <li data-target="#testimonials" data-slide-to="1" class=""></li>
+        <li data-target="#testimonials" data-slide-to="2" class=""></li>
+      </ol>
+      <!-- end carousel-indicators -->
+    </div>
+    <!-- end carousel -->
+  </div>
+  <!-- end containter -->
+</div>
+<!-- end #client -->

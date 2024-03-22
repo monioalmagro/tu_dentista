@@ -1,0 +1,30 @@
+mutation contactMe($input: MutationContactMeInput!) {
+  psychology {
+    contactMe(input: $input) {
+      __typename
+      ... on ContactMeType {
+        originalId
+        wasReported
+        __typename
+      }
+      ... on ResponseValidationError {
+        code
+        type
+        message
+        __typename
+      }
+      ... on ResponseInternalError {
+        code
+        type
+        message
+        __typename
+      }
+      ... on ResponseIntegrityError {
+        code
+        type
+        message
+        __typename
+      }
+    }
+  }
+}

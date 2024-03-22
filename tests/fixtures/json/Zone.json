@@ -1,0 +1,652 @@
+[
+    {
+        "model": "core.zone",
+        "pk": 1,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Abasto",
+            "slug": "abasto",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 2,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Agronomía",
+            "slug": "agronomia",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 3,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Almagro",
+            "slug": "almagro",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 4,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Balvanera (Once)",
+            "slug": "balvanera-once",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 5,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Barracas",
+            "slug": "barracas",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 6,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Belgrano",
+            "slug": "belgrano",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 7,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Boedo",
+            "slug": "boedo",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 8,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Caballito",
+            "slug": "caballito",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 9,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Chacarita",
+            "slug": "chacarita",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 10,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Coghlan",
+            "slug": "coghlan",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 11,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Colegiales",
+            "slug": "colegiales",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 12,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Congreso - Tribunales",
+            "slug": "congreso-tribunales",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 13,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Constitución",
+            "slug": "constitucion",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 14,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Flores",
+            "slug": "flores",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 15,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Floresta",
+            "slug": "floresta",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 16,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "La Boca",
+            "slug": "la-boca",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 17,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "La Paternal",
+            "slug": "la-paternal",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 18,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Liniers",
+            "slug": "liniers",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 19,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Mataderos",
+            "slug": "mataderos",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 20,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Monserrat",
+            "slug": "monserrat",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 21,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Monte Castro",
+            "slug": "monte-castro",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 22,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Nueva Pompeya",
+            "slug": "nueva-pompeya",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 23,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Núñez",
+            "slug": "nunez",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 24,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Palermo",
+            "slug": "palermo",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 25,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Parque Avellaneda",
+            "slug": "parque-avellaneda",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 26,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Parque Chacabuco",
+            "slug": "parque-chacabuco",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 27,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Parque Chas",
+            "slug": "parque-chas",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 28,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Parque Patricios",
+            "slug": "parque-patricios",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 29,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Puerto Madero",
+            "slug": "puerto-madero",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 30,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Recoleta - Barrio Norte",
+            "slug": "recoleta-barrio-norte",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 31,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Retiro",
+            "slug": "retiro",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 32,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Saavedra",
+            "slug": "saavedra",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 33,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "San Cristobal",
+            "slug": "san-cristobal",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 34,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "San Nicolas",
+            "slug": "san-nicolas",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 35,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "San Telmo",
+            "slug": "san-telmo",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 36,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Vélez Sarsfield",
+            "slug": "velez-sarsfield",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 37,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Versalles",
+            "slug": "versalles",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 38,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Villa Crespo",
+            "slug": "villa-crespo",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 39,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Villa del Parque",
+            "slug": "villa-del-parque",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 40,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Villa Devoto",
+            "slug": "villa-devoto",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 41,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Villa General Mitre",
+            "slug": "villa-general-mitre",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 42,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Villa Lugano",
+            "slug": "villa-lugano",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 43,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Villa Luro",
+            "slug": "villa-luro",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 44,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Villa Ortúzar",
+            "slug": "villa-ortuzar",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 45,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Villa Pueyrredón",
+            "slug": "villa-pueyrredon",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 46,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Villa Real",
+            "slug": "villa-real",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 47,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Villa Riachuelo",
+            "slug": "villa-riachuelo",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 48,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Villa Santa Rita",
+            "slug": "villa-santa-rita",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 49,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Villa Soldati",
+            "slug": "villa-soldati",
+            "city": 1
+        }
+    },
+    {
+        "model": "core.zone",
+        "pk": 50,
+        "fields": {
+            "created_at": "2023-11-28T02:27:21.956Z",
+            "updated_at": "2023-11-28T02:27:21.956Z",
+            "is_active": true,
+            "is_deleted": false,
+            "name": "Villa Urquiza",
+            "slug": "villa-urquiza",
+            "city": 1
+        }
+    }
+]

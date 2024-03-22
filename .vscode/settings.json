@@ -1,0 +1,4 @@
+{
+    "python.formatting.provider": "black",
+    "python.defaultInterpreterPath": " /home/almagro/Escritorio/decires/.venv/bin/activate"
+}

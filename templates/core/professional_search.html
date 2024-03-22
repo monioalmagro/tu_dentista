@@ -1,0 +1,105 @@
+{% extends 'base/base.html' %}
+<!--  -->
+{% load static %}
+<!--  -->
+{% block extra_header %}
+<link href="{% static 'assets/css/e-commerce/app.min.css' %}" rel="stylesheet" />
+{% endblock extra_header%}
+
+{% block navbar %} {% include 'base/clean_navbar.html' %} {% endblock navbar %}
+
+<!--  -->
+{% block content %}
+<!-- begin #quote -->
+<div id="quote" class="content bg-black-darker has-bg" data-scrollview="true">
+  <!-- begin content-bg -->
+  <div
+    class="content-bg"
+    style="background-image: url(/static/assets/decires_img/portada_png.png); opacity: 0.4"
+    data-paroller-factor="0.5"
+    data-paroller-factor-md="0.01"
+    data-paroller-factor-xs="0.01"
+  ></div>
+  <!-- end content-bg -->
+  <!-- begin container -->
+  <div class="container" data-animation="true" data-animation-type="fadeInLeft">
+    <!-- begin row -->
+    <div class="row">
+      <!-- begin col-12 -->
+      <div class="col-md-12 quote">
+        </br>
+        <span class="text-primary">Buscador de Profesionales</span>
+        <!-- <small>Lic. A B, Decires Psicología.</small> -->
+        </br>
+      </div>
+      <!-- end col-12 -->
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</div>
+<!-- end #quote -->
+<!-- BEGIN search-results -->
+<div id="search-results" class="section-container">
+  <div class="container">
+    <div class="search-container">
+      <div class="search-content">
+        <!-- BEGIN search-toolbar -->
+        <div class="search-toolbar">
+          <!-- BEGIN row -->
+          <div class="row">
+            <!-- BEGIN col-6 -->
+            <div class="col-lg-6">
+              <h4>Se han encontrado <span id="total_count"></span> Profesionales</h4>
+            </div>
+            <!-- END col-6 -->
+            <!-- BEGIN col-6 -->
+            <div class="col-lg-6 text-right">
+
+            </div>
+            <!-- END col-6 -->
+          </div>
+          <!-- END row -->
+        </div>
+        <!-- END search-toolbar -->
+        <!-- BEGIN search-item-container -->
+        <div class="search-item-container" id="professional_list"></div>
+        <!-- END search-item-container -->
+        <!-- BEGIN pagination -->
+        <ul class="pagination justify-content-center m-t-0" id="pagination">
+        </ul>
+        <!-- END pagination -->
+      </div>
+      <div class="search-sidebar">
+        <h4 class="title">Filtrar Por</h4>
+
+        <h4 class="title m-b-0">Especialidades</h4>
+        <ul class="search-category-list" id="specialization_list">
+        </ul>
+        </br>
+        <h4 class="title m-b-0">Idiomas</h4>
+        <ul class="search-category-list" id="language_list">
+        </ul>
+        </br>
+
+        <center>
+          <a href="javascript:void(0)" title="FILTRAR" onclick="professional_filter_results();" class="btn btn-inverse btn-icon btn-circle btn-xs"><i class="fa fa-search"></i></a>
+          &nbsp;
+          <a href="javascript:void(0)" title="RESET FILTROS" onclick="restore_filters();" class="btn btn-default btn-icon btn-circle btn-xs"><i class="fa fa-undo"></i></a>
+        </center>
+
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+</div>
+<!-- END search-results -->
+
+
+{% endblock content %}
+<!--  -->
+{% block extra_js %}
+<script src="{% static 'base/professional_search.js' %}?no_cache={{ no_cache }}"></script>
+<script src="{% static 'assets/js/e-commerce/app.min.js' %}"></script>
+{% endblock extra_js %}

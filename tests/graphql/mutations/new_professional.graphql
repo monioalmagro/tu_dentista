@@ -1,0 +1,74 @@
+mutation newProfessionalMutations($input: MutationUserInput!) {
+  psychology {
+    newProfessional(input: $input) {
+      __typename
+      ... on ProfessionalType {
+        __typename
+        originalId
+        firstName
+        lastName
+        email
+        avatar {
+          originalId
+          url
+          __typename
+        }
+        genderEnum
+        facebookProfile
+        instagramProfile
+        linkedinProfile
+        userCarreerSet {
+          originalId
+          name
+          description
+          serviceMethodEnum
+          serviceModalityEnum
+          truncateExperienceSummary
+          __typename
+        }
+        userSpecializationSet {
+          originalId
+          name
+          description
+          __typename
+        }
+        languagesSet {
+          name
+          slug
+          __typename
+        }
+        userOfficeSet {
+          name
+          city {
+            name
+            __typename
+          }
+          __typename
+        }
+        attachmentSet {
+          originalId
+          url
+          description
+        }
+        isVerifiedProfile
+        profileUrl
+        __typename
+      }
+      ... on ResponseValidationError {
+        code
+        type
+        message
+      }
+      ... on ResponseIntegrityError {
+        code
+        type
+        message
+      }
+      ... on ResponseInternalError {
+        code
+        type
+        message
+      }
+    }
+  }
+}

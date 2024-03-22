@@ -1,0 +1,82 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Agrega el enlace a la fuente Ubuntu -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Agrega el estilo CSS para la fuente Ubuntu -->
+    <style>
+      body {
+        font-family: "Ubuntu", sans-serif;
+      }
+      /* Aplica la fuente Ubuntu al div #about y al div #team */
+      #about p,
+      #team p,
+      #team .name,
+      #team .title,
+      #team .social {
+        font-family: "Ubuntu", sans-serif;
+      }
+      /* También puedes aplicar la fuente a otros elementos según sea necesario */
+    </style>
+    <meta charset="utf-8" />
+    <title>{{ site_name }}</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      name="viewport"
+    />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    {% block header %}
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{% static 'assets/img/brand/logos_decires/red-psi-decires.ico' %}"
+    />
+    <!-- ================== BEGIN BASE CSS STYLE ================== -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,600,700" rel="stylesheet" />
+
+    <link href="{% static 'assets/css/one-page-parallax/app.min.css' %}" rel="stylesheet" />
+    <!-- ================== END BASE CSS STYLE ================== -->
+    <link
+      href="{% static 'assets/css/one-page-parallax/theme/yellow.min.css' %}"
+      rel="stylesheet"
+      id="theme-css-link"
+    />
+
+    <link href="{% static 'assets/plugins/gritter/css/jquery.gritter.css' %}" rel="stylesheet" />
+    <style>
+      p {
+        font-size: 1.2em;
+      }
+    </style>
+
+    {% endblock header %} {% block extra_header %} {% endblock extra_header %}
+  </head>
+  <body data-spy="scroll" data-target="#header" data-offset="51">
+    <!-- begin #page-container -->
+    <div id="page-container" class="fade">
+      {% block navbar %} {% include 'base/navbar.html' %} {% endblock navbar %}
+      <!--  -->
+      {% block content %} {% include 'base/content.html' %} {% endblock content %}
+      <!--  -->
+      {% block footer %} {% include 'base/footer.html' %} {% endblock footer %}
+    </div>
+    <!-- end #page-container -->
+    {% block js %}
+    <!-- ================== BEGIN BASE JS ================== -->
+    <script src="{% static 'assets/js/one-page-parallax/app.min.js' %}"></script>
+    <script src="{% static 'assets/plugins/sweetalert/dist/sweetalert.min.js' %}"></script>
+    <script src="{% static 'assets/plugins/gritter/js/jquery.gritter.js' %}"></script>
+    <script src="{% url 'javascript' %}"></script>
+    <script src="{% static 'base/commons.js' %}?no_cache={{ no_cache }}"></script>
+    <!-- ================== END BASE JS ================== -->
+    {% endblock js %}
+    <!--  -->
+    {% block extra_js %} {% endblock extra_js %}
+  </body>
+</html>
